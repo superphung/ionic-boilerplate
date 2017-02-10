@@ -1,0 +1,46 @@
+{
+  "name": "ionic-start",
+  "version": "1.1.1",
+  "description": "ionic-start: An Ionic project",
+  "scripts": {
+    "local": "gulp babel && ionic serve",
+    "commit": "git cz"
+  },
+  "dependencies": {
+    "gulp": "^3.5.6",
+    "gulp-sass": "^2.0.4",
+    "gulp-concat": "^2.2.0",
+    "gulp-minify-css": "^0.3.0",
+    "gulp-rename": "^1.2.0"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "6.22.0",
+    "bower": "^1.3.3",
+    "commitizen": "2.9.5",
+    "cz-conventional-changelog": "1.2.0",
+    "gulp-babel": "6.1.2",
+    "gulp-util": "^2.2.14",
+    "shelljs": "^0.3.0"
+  },
+  "cordovaPlugins": [
+    "cordova-plugin-whitelist",
+    "cordova-plugin-statusbar",
+    "cordova-plugin-console",
+    "cordova-plugin-device",
+    "cordova-plugin-splashscreen",
+    "ionic-plugin-keyboard"
+  ],
+  "cordovaPlatforms": [
+    "ios",
+    {
+      "platform": "ios",
+      "version": "",
+      "locator": "ios"
+    }
+  ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
